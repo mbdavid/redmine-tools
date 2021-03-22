@@ -1,13 +1,18 @@
 # redmine-tools
 
-A set of tools for Redmine that runs only in your browser (using `IndexedDB`).
+Some external tools for `Redmine 2.4+` using client side only.
 
-Enter here: https://
+## Demo
 
-> Login with your Redmine URL and your user access token (from My Account page)
+Try here: https://mbdavid.github.io/redmine-tools/
+
+> For external domain access, redmine server must run with CORS enabled
 
 ## Tools
-- User Timesheet - Calendar View
+
+- Database Sync
+- User Timesheet (Month Calendar View)
+- User Dash
 
 ## Stack
 
@@ -15,4 +20,5 @@ Enter here: https://
 - **NO** build process - Push to git repository and works
 - ES modules with `importmap` - [check browsers support](https://caniuse.com/?search=importmap)
 - Web Components using [Hybirds](https://hybrids.js.org/#/)
+- Background user-data syncronization into `IndexedDB` using workers
 - ??? for `IndexedDB` wrapper
